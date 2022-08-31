@@ -188,7 +188,6 @@ public class SellerDaoJDBC implements SellerDao {
 			}
 			return list;
 		} catch (SQLException e) {
-			// TODO: handle exception
 			throw new DbException(e.getMessage());
 		} finally {
 			DB.closeStatement(st);
